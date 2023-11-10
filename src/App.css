@@ -1,0 +1,411 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'PTSerifCaption';
+  src: url(PTSerifCaption-Regular.ttf)
+}
+
+body {
+  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  color: darkslategray;
+  transition: background-color 0.5s, color 0.5s;
+  margin: 0;
+}
+
+.dark-mode {
+  background-color: darkslategray;
+  color: whitesmoke;
+}
+
+.dark-mode header {
+  color: whitesmoke;
+  background-color: rgb(32, 43, 43);
+}
+
+.dark-mode a {
+  color: whitesmoke;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+#logo {
+  padding-top: 40px;
+  padding-left: 55px;
+  flex: 1;
+  color: crimson;
+}
+
+#logo img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: left;
+}
+
+
+nav img {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.menu-pc {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-pc ul {
+  font-family: monospace, sans-serif;
+  font-size: 18px;
+  margin-top: 40px;
+  list-style-type: none;
+  padding: 0;;
+}
+
+.menu-pc li {
+  display: inline;
+  padding: 20px;
+}
+
+.menu-pc a {
+  color:rgb(248, 4, 53);
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-pc a:hover {
+  color: whitesmoke;
+  transition: ease;
+  background-color: crimson;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 55px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: pink;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: crimson;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: crimson;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  display: flex;
+  flex-direction: column; /* Adicionado para empilhar itens verticalmente */
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: crimson;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column; /* Adicionado para empilhar itens verticalmente */
+}
+
+/* Individual item */
+.bm-item {
+  margin-bottom: 10px;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#dark {
+  cursor: pointer;
+  padding-top: 20px;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  margin-left: -6em;
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  #dark {
+      margin-top: 90px;
+  }
+}
+
+#dark:hover {
+  transform: scaleX(-1);
+}
+
+main {
+  padding: 0 60px;
+}
+
+#boasvindas {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 150px 0;
+  background-image: url(background-a.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  #boasvindas {
+      background-image: url(backgroundmobile-a.png);
+  }
+}
+
+.apresentacao {
+  text-align: left;
+}
+
+.apresentacao p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#sombra {
+  display: inline;
+  color: whitesmoke;
+  background-color: crimson;
+  font-family: 'PTSerifCaption';
+  letter-spacing: -3px;
+  font-size: 60px;
+  margin-bottom: 10px;
+  user-select: none;
+  transition: opacity 1s ease;
+}
+
+#sombra.mostrar {
+  opacity: 1;
+}
+
+#portfolio ul {
+  text-decoration: none;
+}
+
+#portfolio h1 {
+  font-size: 40px;
+  letter-spacing: -3px;
+  font-family: 'PTSerifCaption';
+  color: crimson;
+  margin-bottom: 5px;
+}
+
+#projetos {
+  color: whitesmoke;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projeto-card {
+  cursor: pointer;
+  margin: 10px;
+  width: 300px;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 20px;
+  background-color: crimson;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.425);
+}
+
+.projeto-card a {
+      text-decoration: none;
+      color: whitesmoke;
+  
+}
+
+.projeto-card:hover {
+  transform: scale(1.05);
+}
+
+.projeto-imagem {
+  opacity: 0.4;
+  height: 50px;
+  background-image: url('github-simbolo.jpg');
+  background-size: cover ;
+  background-position: center;
+  border-radius: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: darkslategray;
+  color: whitesmoke;
+  display: flex;
+  padding: 60px;
+  left: 30px;
+  border-top: 1px solid whitesmoke;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-left, .footer-right {
+  width: 50%;
+  font-size: 14px;
+}
+
+.copyright, .social {
+  font-weight: bold;
+}
+
+.social {
+  text-align: left;
+}
+
+.social a.social-icon {
+  margin-right: 10px;
+}
+
+.social a.social-icon img {
+  width: 50px;
+  height: auto;
+}
+
+footer a {
+  color: whitesmoke;
+}
+
+#voltar-ao-topo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+}
+
+#headertexto {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headertexto h1{
+  font-size: 50px;
+}
+
+#apresentacaomain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#apresentacaomain img {
+  width:400px;
+  margin: 0; 
+  border-radius: 100px;
+  border: 0;
+}
+
+#apresentacaomain p{
+  padding-left: 40px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  #apresentacaomain {
+    flex-wrap: wrap;
+  }
+
+  #apresentacaomain img {
+    width: 100%; 
+  }
+  #apresentacaocomplemento {
+      padding: 0;
+  }
+}
+
+#apresentacaocomplemento {
+  text-align: justify;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#apresentacaocomplemento p{
+  font-size: 18px;
+}
+
+#artigos {
+  text-align: center; /* Alinha o texto e a imagem ao centro */
+  padding: 110px; /* Adiciona algum espaçamento interno à seção */
+}
+
+#artigos img {
+  width: 500px;
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima da seção */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaçamento adicional abaixo da imagem */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+#artigos p {
+  margin-top: 20px; /* Adiciona algum espaçamento entre a imagem e o texto */
+}
