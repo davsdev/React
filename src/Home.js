@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css';
-import Main from '../Main';
-import Work from '../Work';
-import back from '../back.svg';
+import './App.css';
+import Main from './Main';
+import Work from './Work';
+import back from './back.svg';
 
 
 function App() {

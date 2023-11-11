@@ -32,14 +32,14 @@ function Header({ isDarkMode, toggleDarkMode }) {
   return (
     <header className={isDarkMode ? 'dark-mode' : ''}>
       <div id="logo" className={isSmallScreen ? 'small-screen' : ''}>
-        <Link to="/pages/Home">
+        <Link to="/">
           <img src={logo} alt="logotipo" />
         </Link>
       </div>
 
       {isSmallScreen ? (
         <Menu right isOpen={false}>
-          <Link to="/pages/Home" className="menu-item" onClick={() => setIsSmallScreen(false)}>
+          <Link to="/" className="menu-item" onClick={() => setIsSmallScreen(false)}>
             Home
           </Link>
           <Link to="/pages/Sobre" className="menu-item" onClick={() => setIsSmallScreen(false)}>
@@ -53,7 +53,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
         <nav className="menu-pc">
           <ul>
             <li>
-              <Link to="/pages/Home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/pages/Sobre">Sobre mim</Link>

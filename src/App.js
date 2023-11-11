@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
-import Home from './pages/Home';
+import Home from './Home';
 import Sobre from './pages/Sobre';
 import Artigos from './pages/Artigos';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -21,7 +21,7 @@ function App() {
     <Router>
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Routes>
-        <Route path="pages/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="pages/Sobre" element={<Sobre />} />
         <Route path="pages/Artigos" element={<Artigos />} />
       </Routes>
