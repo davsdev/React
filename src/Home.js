@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Main from './Main';
 import Work from './Work';
+import Guest from './Guest';
 import back from './back.svg';
 
 
@@ -36,6 +37,7 @@ function App() {
     <>
     <Main />
     <Work />
+    <Guest />
     {showBackToTop && (
         <img
           id="voltar-ao-topo"
